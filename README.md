@@ -1,3 +1,4 @@
+
 ## Distributed Data Parallel MNIST Training with TensorFlow 2 and SageMaker Distributed
 
 This guide demonstrates how to use SageMaker's distributed data parallel library (`smdistributed.dataparallel`) to train a TensorFlow 2 model on the MNIST dataset.
@@ -20,15 +21,14 @@ Amazon SageMaker's distributed library allows you to train deep learning models 
 8. **Inference:** Shows how to use the deployed endpoint for making predictions on new data.
 9. **Cleanup:** Guides you on how to delete the endpoint if you don't intend to use it further.
 
-    
-
 **Additional Notes**
--Lookup mnist_final_update.ipynb for detailed code of distribution strategy.
+
+- Refer to `mnist_final_update.ipynb` for a detailed code example of the distribution strategy.
 - For best performance, it's recommended to use instance types that support Amazon Elastic Fabric Adapter (e.g., ml.p3dn.24xlarge, ml.p4d.24xlarge) when training with `smdistributed.dataparallel`.
 
 **Further Resources**
 
-- TensorFlow in SageMaker: [https://docs.aws.amazon.com/sagemaker/latest/dg/tf.html](https://docs.aws.amazon.com/sagemaker/latest/dg/tf.html)
-- SageMaker distributed data parallel API Specification: [https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-use-api.html](https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-use-api.html)
-- SageMaker's Distributed Data Parallel Library: [https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel.html](https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel.html)
-- Modify a TensorFlow 2.x Training Script Using SMD Data Parallel: [https://aws.amazon.com/tensorflow/](https://aws.amazon.com/tensorflow/)
+- TensorFlow in SageMaker: TensorFlow in SageMaker: [https://docs.aws.amazon.com/sagemaker/latest/dg/tf.html](https://docs.aws.amazon.com/sagemaker/latest/dg/tf.html)
+- SageMaker distributed data parallel API Specification: SageMaker distributed data parallel API Specification: [https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-use-api.html](https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel-use-api.html)
+- SageMaker's Distributed Data Parallel Library: SageMaker's Distributed Data Parallel Library: [https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel.html](https://docs.aws.amazon.com/sagemaker/latest/dg/data-parallel.html)
+- Modify a TensorFlow 2.x Training Script Using SMD Data Parallel: Modify a TensorFlow 2.x Training Script Using SMD Data Parallel: [https://aws.amazon.com/tensorflow/](https://aws.amazon.com/tensorflow/)
