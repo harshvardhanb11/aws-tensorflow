@@ -7,7 +7,6 @@
     "# Distributed data parallel MNIST training with TensorFlow 2 and SageMaker Distributed\n"
    ]
   },
- 
   {
    "cell_type": "markdown",
    "metadata": {},
@@ -244,9 +243,5 @@
    "source": [
     "predictor.delete_endpoint()"
    ]
-  },
-  {
-   "attachments": {},
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
+  }
+ 
