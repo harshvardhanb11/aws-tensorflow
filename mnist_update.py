@@ -47,7 +47,7 @@ print(f'Test accuracy: {test_acc:.4f}')
 """)
 
 # Step 3: Specify the role for your SageMaker training job
-role = 'arn:aws:iam::620527015753:role/AmazonSageMaker-ExecutionRole'
+role = 'arn:aws:iam::620527753051:role/AmazonSageMaker-ExecutionRole'
 
 # Step 4: Specify the number of instances for distributed training
 instance_count = 2  # You can adjust this based on your requirements
@@ -56,7 +56,7 @@ instance_count = 2  # You can adjust this based on your requirements
 #instance_type = 'ml.p3.8xlarge'  Or any other instance type that supports multiple GPUs
 instance_type = 'ml.m5.2xlarge'
 # Step 6: Specify the URI of the pre-built Docker image for TensorFlow training
-image_uri = '763104351884.dkr.ecr.us-east-1.amazonaws.com/tensorflow-training:2.9.1-cpu-py39-ubuntu20.04'
+image_uri = '763104135484.dkr.ecr.us-east-1.amazonaws.com/tensorflow-training:2.9.1-cpu-py39-ubuntu20.04'
 
 # Step 7: Create a TensorFlow Estimator with the pre-built image
 estimator = TensorFlow(entry_point=script_file,
