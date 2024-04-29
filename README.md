@@ -20,9 +20,10 @@ Amazon SageMaker's distributed library allows you to train deep learning models 
 8. **Inference:** Shows how to use the deployed endpoint for making predictions on new data.
 9. **Cleanup:** Guides you on how to delete the endpoint if you don't intend to use it further.
 
-**Additional Notes**
+    
 
-- The guide includes CI test results for different regions.
+**Additional Notes**
+-Lookup mnist_final_update.ipynb for detailed code of distribution strategy.
 - For best performance, it's recommended to use instance types that support Amazon Elastic Fabric Adapter (e.g., ml.p3dn.24xlarge, ml.p4d.24xlarge) when training with `smdistributed.dataparallel`.
 
 **Further Resources**
